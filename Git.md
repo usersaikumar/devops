@@ -67,13 +67,18 @@ it will take you to that branch
     git merge branch_name
 it will merge info from selected branch to current branch
 
-## push
+## push & pull
 
     git push origin
 it will push your information from main branch into repository
 
     git push origin branch_name
 it will push your information from selected branch_name into repository
+
+    git pull origin
+it will pull your information from repository into current_branch
+
+
 
 
 
