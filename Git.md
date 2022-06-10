@@ -29,6 +29,7 @@ it is intialize your directory as SCM(source Code Management) or respond to GIT
     git clone http://url_that_u_copy_from_github.git
 copy all the content from your Git repository
 
+
 ## Stages
 ### 3 Stages are available
 - unstaged
@@ -48,13 +49,25 @@ it revert your file from satged state to unstaged state
     git diff
 it shows difference of what is changed but not staged
 
+    git diff --staged
+it shows difference of what is changed but not commited
+
     git commit -m "your message"
 it commit your staged content as a new commit snapshot
+
+    git log
+it shows all commits in the current branch
 
 ## Branches
 
     git branch
 it shows list of branches and * will indicate present branch
+
+    git branch -a
+it shows hidden branches (if you clone a repository)
+
+    git branch-r
+it shows hidden branches (if you clone a repository)
 
     git branch branch_name
 it create branch
@@ -78,6 +91,19 @@ it will push your information from selected branch_name into repository
     git pull origin
 it will pull your information from repository into current_branch
 
+## Inspect & Compose
+
+    git log
+it shows all commits in the current branch
+
+    git log branchB..branchA
+it show commits on the branchA thar are not in branch B
+
+    git log --follow file_name
+it will show commits of that file even across renames
+
+    git show
+it show any object in Git in Human readable format
 
 
 
