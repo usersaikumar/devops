@@ -293,6 +293,8 @@ add Kubernetes repository for Ubuntu 20.04 to all the servers.
 ```
 sudo apt update
 sudo apt -y install curl apt-transport-https
+```
+```
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
@@ -301,6 +303,8 @@ Then install required packages.
 ```
 sudo apt update
 sudo apt -y install vim git curl wget kubelet kubeadm kubectl
+```
+```
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
@@ -351,9 +355,13 @@ sudo sysctl --system
  ```
 sudo apt update
 sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
+```
+```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
+```
+```
 sudo apt install -y containerd.io docker-ce docker-ce-cli
 ```
 
@@ -380,6 +388,8 @@ EOF
 ```
 sudo systemctl daemon-reload 
 sudo systemctl restart docker
+```
+```
 sudo systemctl enable docker
 ```
 
