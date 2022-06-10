@@ -2,7 +2,7 @@
 - Unstaged
 - Staged
 - Commited
-``
+```
 asdfasdfasdf
 asdf
 asd
@@ -11,7 +11,7 @@ sdf
 asd
 fa
 sdf
-``
+```
 
 
 ### Unstaged
