@@ -35,7 +35,7 @@ copy all the content from your Git repository
 - staged
 - commited
 
-        
+
 
     git status
 it shows the status of all your files are in which stage state
@@ -62,6 +62,8 @@ it create branch
 
     git checkout branch_name
 it will take you to that branch
+
+jkaslkdfj
 
 
 
