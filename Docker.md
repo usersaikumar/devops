@@ -10,7 +10,7 @@
 
 ### command
 
-    docker login
+  docker login
 it will prompt to produce your username & password
 then you will get logged in
 
