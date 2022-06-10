@@ -1,3 +1,3 @@
 ## Bash Commands
-#### Show system Kernal
-    uname -a
+Show system Kernal
+`uname -a`
