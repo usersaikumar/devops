@@ -34,12 +34,7 @@ copy all the content from your Git repository
 - unstaged
 - staged
 - commited
-<<<<<<< HEAD
-
-
-=======
 #### commands
->>>>>>> 65ea18c79007357a933c946d5e586b28ee8e895b
 
     git status
 it shows the status of all your files are in which stage state
