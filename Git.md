@@ -35,9 +35,7 @@ copy all the content from your Git repository
 - staged
 - commited
 
-        commands as follows
-
-    git status
+        git status
 it shows the status of all your files are in which stage state
 
     git add filename
