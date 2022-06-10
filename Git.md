@@ -62,6 +62,19 @@ it create branch
     git checkout branch_name
 it will take you to that branch
 
+## Merging
+
+    git merge branch_name
+it will merge info from selected branch to current branch
+
+## push
+
+    git push origin
+it will push your information from main branch into repository
+
+    git push origin branch_name
+it will push your information from selected branch_name into repository
+
 
 
 
