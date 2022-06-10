@@ -1,5 +1,3 @@
-## Bash Commands
-Show system Kernal
-```
-uname -a
-```
+# Git cheat sheet
+https://cheatography.com/davechild/cheat-sheets/linux-command-line/
+# additional commands
