@@ -1,6 +1,5 @@
 ## Bash Commands
-show system kernel
+show system and kernel
     uname -a
-show distributions
+show distribution
     head -nl /etc/issue
-  
