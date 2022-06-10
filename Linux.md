@@ -1,5 +1,5 @@
 ## Bash Commands
 show system and kernel
-    uname -a
+'uname -a'
 show distribution
-    head -nl /etc/issue
+'head -nl /etc/issue'
