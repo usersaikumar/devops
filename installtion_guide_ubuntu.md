@@ -313,6 +313,7 @@ Confirm installation by checking the version of kubectl.
 ```
 kubectl version --client && kubeadm version
 ```
+### output(Don't copy)
 ```
 Client Version: version.Info{Major:"1", Minor:"22", GitVersion:"v1.22.2", GitCommit:"8b5a19147530eaac9476b0ab82980b4088bbc1b2", GitTreeState:"clean", BuildDate:"2021-09-15T21:38:50Z", GoVersion:"go1.16.8", Compiler:"gc", Platform:"linux/amd64"}
 kubeadm version: &version.Info{Major:"1", Minor:"22", GitVersion:"v1.22.2", GitCommit:"8b5a19147530eaac9476b0ab82980b4088bbc1b2", GitTreeState:"clean", BuildDate:"2021-09-15T21:37:34Z", GoVersion:"go1.16.8", Compiler:"gc", Platform:"linux/amd64"}
@@ -427,11 +428,20 @@ Enable kubelet service.
 sudo systemctl enable kubelet
 ```
 
-Initialize kubeadm 
+Initialize kubeadm & copy requirred info to join by node
 ```
 kubeadm init
 ```
-
+if error came try this
+```
+rm /etc/containerd/config.toml
+systemctl restart containerd
+kubeadm init
+```
+if you have forget to do then use 
+```
+kubeadm token create --print-join-command
+```
 Configure kubectl using commands in the output:
 ```
 mkdir -p $HOME/.kube
@@ -440,10 +450,16 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 Additional nodes can be added using the command in installation output:
+In node add this join command which you copy above(### it similar like to this)
 ```
 kubeadm join k8s-cluster.computingforgeeks.com:6443 --token sr4l2l.2kvot0pfalh5o4ik \
     --discovery-token-ca-cert-hash sha256:c692fb047e15883b575bd6710779dc2c5af8073f7cab460abd181fd3ddb29a18 \
     --control-plane
+```
+if error came then try this command and again try to join
+```
+rm /etc/containerd/config.toml
+systemctl restart containerd
 ```
     
  ### Install network plugin on Master
