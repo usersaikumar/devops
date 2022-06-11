@@ -46,3 +46,5 @@ EOF
 sudo sysctl --system
 lsmod | grep br_netfilter
 sudo systemctl enable kubelet
+rm /etc/containerd/config.toml
+systemctl restart containerd
