@@ -450,7 +450,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 Additional nodes can be added using the command in installation output:
-In node add this join command which you copy above(### it similar like to this)
+In node add this join command which you copy above
+### it similar like to this
 ```
 kubeadm join k8s-cluster.computingforgeeks.com:6443 --token sr4l2l.2kvot0pfalh5o4ik \
     --discovery-token-ca-cert-hash sha256:c692fb047e15883b575bd6710779dc2c5af8073f7cab460abd181fd3ddb29a18 \
