@@ -1,4 +1,12 @@
 # Git Cheat Sheet
+## Git Installation on Ubuntu
+
+```
+apt-get update -y
+apt-get install git -y
+git --version
+```
+
 https://education.github.com/git-cheat-sheet-education.pdf
 # Additional Commands
 
