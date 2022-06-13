@@ -1,7 +1,7 @@
 # Docker Commands
 
 ## Docker Install
-- To install docker create sh file (example: docker.sh) and paste below commands
+To install docker create sh file (example: docker.sh) and paste below commands
 
     sudo apt-get update -y
     sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
