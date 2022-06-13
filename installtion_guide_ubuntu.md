@@ -469,7 +469,9 @@ In this we’ll use Calico. You can choose any other supported network plugins.
 ```
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```
+
 if you want all the things in a script use
 
 - install in every Node(iclude master) --- https://github.com/usersaikumar/devops/blob/main/kubernetes/kubernetes.sh
+- &&&&&&&&&&&&&&&
 - install in master node only --- https://github.com/usersaikumar/devops/blob/main/kubernetes/kubernetes-master
