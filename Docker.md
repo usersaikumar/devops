@@ -90,6 +90,8 @@ it will Stop container
 it will attach contaier so then you could modify the container
 
     docker commits container_Name username/image_Name:version
-it will save your container as image and store in docker hub
+it will save your container as image and use to store in docker hub
 
+    docker push username/image_Name:version
+it will save your customized image in docker hub
 
