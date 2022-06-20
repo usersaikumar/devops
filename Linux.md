@@ -8,4 +8,7 @@ To see system_info
 ```
 uname
 ```
-
+To see full system_info
+```
+uname -a
+```
