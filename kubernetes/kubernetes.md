@@ -1,6 +1,10 @@
 ## Kubernetes
 
+
+
 ## yaml file
+
+https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/
 
 ```
 apiVersion: apps/v1
@@ -26,6 +30,11 @@ spec:
 ```
  kubectl apply -f https://k8s.io/examples/application/deployment.yaml
 ```
+#### to display
+```
+kubectl describe deployment nginx-deployment
+```
+
 
 To install Kubernetes
 
