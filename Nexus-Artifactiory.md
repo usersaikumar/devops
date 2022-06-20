@@ -3,11 +3,13 @@
 ## Nexus Install
 
 ```
-sudo apt-get update   
-sudo apt install openjdk-8-jre-headless -y
+sudo apt-get update
+sudo apt-get -y install default-jdk
 cd /opt
 wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
 tar -xvf latest-unix.tar.gz
+sudo apt-get update   
+sudo apt install openjdk-8-jre-headless -y
 ```
 ```
 cd /opt/nexus-3.35.0-02/bin (may your version will change)
