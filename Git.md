@@ -76,7 +76,7 @@ it shows list of branches and * will indicate present branch
     git branch -a
 it shows hidden branches (if you clone a repository)
 
-    git branch-r
+    git branch -r
 it shows hidden branches (if you clone a repository)
 
     git branch branch_name
