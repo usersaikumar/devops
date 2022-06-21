@@ -79,6 +79,13 @@ it shows hidden branches (if you clone a repository)
     git branch -r
 it shows hidden branches (if you clone a repository)
 
+    git branch --merged master
+it shows which branches are merged with master
+
+    git branch --no-merged
+it show which are not merged
+
+
     git branch branch_name
 it create branch
 
@@ -105,6 +112,14 @@ it will pull your information from repository into current_branch
 
     git log
 it shows all commits in the current branch
+    
+    git log --oneline
+it show in online
+
+    git log -3
+it show latest 3
+
+    
 
     git log branchB..branchA
 it show commits on the branchA thar are not in branch B
