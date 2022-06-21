@@ -102,4 +102,7 @@ COPY . /app
 RUN make /app
 CMD python /app/app.py
 ```
+```
+docker build --no-cache -t helloapp:v2 .
+```
 
