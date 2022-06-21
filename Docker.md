@@ -95,3 +95,11 @@ it will save your container as image and use to store in docker hub
     docker push username/image_Name:version
 it will save your customized image in docker hub
 
+## Dockerfile
+```
+FROM ubuntu:18.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
+```
+
