@@ -118,5 +118,27 @@ ansible dev -a "yum install git"
 ```
 ansible dev[0] -b -m yum -a "pkg=git state=present"
 ```
+```
+ansible dev[0] -b -m user -a "name=someone"
+```
+```
+ansible dev[0] -b -m copy -a "src=path dest=node path"
+```
+
 ### playbook
+```
+--- #comment
+- hosts: group_name
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: customised_name
+      action: yum name=git state=installed
+
+```
+#### excustion
+```
+ansible-playbook file_name.yml
+```
 
