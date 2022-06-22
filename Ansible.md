@@ -1,4 +1,4 @@
-# Ansible cheet sheet
+# Ansible
 
 ## Configuration Management Tool
 
