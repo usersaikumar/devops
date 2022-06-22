@@ -1,4 +1,16 @@
 # Sonar Qube
+## Quality Management Tool
+- Code Analysis
+- Test Reports
+- Cover Coverage
+## Components of Sonarqube
+### SonarQube Server
+- Rules
+- Database
+- web insterface
+### Sonar Scanner
+- Source Code
+- supports to 27 Languages
 ## Sonar Qube Installation
 ### Docker Install on ubuntu
 
