@@ -96,5 +96,27 @@ ssh-copy-id ansible@172.38.56.2
 ```
 ssh ansible@172.38.56.2
 ```
+## Ansible Commands
+- Ad-hoc commands
+- Modules
+- Playbooks
+### Ad-hoc
+if you install in particular node
+```
+ansible dev[0] -a "touch file1"
+```
+if you install in every node
 
+```
+ansible dev -a "touch file1"
+```
+we can give any linux command
+```
+ansible dev -a "yum install git"
+```
+### Modules
+```
+ansible dev[0] -b -m yum -a "pkg=git state=present"
+```
+### playbook
 
