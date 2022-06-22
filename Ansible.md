@@ -10,11 +10,17 @@
 - Key less
 - push machanism
 
-### Ansible setup
+### Ansible setup for amazon linux
 ```
 sudo -i
 sudo amazon-linux-extras install ansible2 -y
 yum install git python python-pip python-level openssal -y
+```
+### Ansible setup for ubuntu
+```
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update -y
+sudo apt install ansible
 ```
 - setup
 
