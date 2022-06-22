@@ -55,3 +55,46 @@ untag or remove # and change to yes
 ```
 passwordAuthentication yes
 ```
+#### create ansible user in Node
+```
+useradd ansible
+```
+```
+passwd ansible
+```
+```
+visudo
+```
+add under root
+```
+ansible ALL=(ALL)   NOPASSWD: ALL
+```
+```
+vim /etc/ssh/sshd_config
+```
+untag or remove # and change to yes
+```
+passwordAuthentication yes
+```
+# Connecting to Nodes
+- ALL serveres
+```
+sudo systemctl restart sshd
+```
+```
+sudo systemctl status sshd
+```
+- switch into ansibe user
+- genrate ssh key
+
+```
+ssh-keygen
+```
+```
+ssh-copy-id ansible@172.38.56.2
+```
+```
+ssh ansible@172.38.56.2
+```
+
+
