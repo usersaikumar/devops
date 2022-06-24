@@ -63,6 +63,13 @@ passwordAuthentication yes
 ```
 #### create ansible user in Node
 ```
+vi /etc/default/useradd
+```
+```
+bin/bash
+```
+
+```
 useradd ansible
 ```
 ```
