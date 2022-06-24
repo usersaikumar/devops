@@ -1,6 +1,71 @@
 ## Kubernetes
 
+## Kubernetes Commands
+execute file
 
+```
+kubectl apply –f <filename>
+kubectl cluster-info
+```
+attaching container
+```
+kubectl attach <pod> –c <container
+kubectl attach 123456-7890 -c tomcat-conatiner
+```
+auto scale
+```
+kubectl autoscale deployment foo --min = 2 --max = 10
+```
+copy
+```
+kubectl cp <Files from source> <Files to Destinatiion>
+```
+create
+```
+kubectl create –f <File Name>
+components:
+deployment
+namespace
+quota
+secret docker-registry
+secret
+secret generic
+secret tls
+serviceaccount
+service clusterip
+service loadbalancer
+service nodeport
+```
+delete
+```
+kubectl delete –f ([-f FILENAME] | TYPE [(NAME | -l label | --all)])
+```
+describe
+```
+kubectl describe pod tomcat
+```
+REPLACE
+```
+kubectl replace -f FILENAME
+```
+LOGS
+```
+kubectl logs –p –c tomcat.8
+```
+GET
+```
+kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columnsfile=...|
+```
+ROLLOUT
+```
+kubectl rollout undo deployment/tomcat
+COMPONENTS:
+rollout history
+rollout pause
+rollout resume
+rollout status
+rollout undo
+```
 
 ## yaml file
 
