@@ -107,7 +107,7 @@ ssh-keygen
 ssh-copy-id ansible@
 ```
 ```
-ssh ansible@172.38.56.2
+ssh ansible@
 ```
 ## Ansible Commands
 - Ad-hoc commands
