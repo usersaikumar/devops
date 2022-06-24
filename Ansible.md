@@ -104,7 +104,7 @@ sudo systemctl status sshd
 ssh-keygen
 ```
 ```
-ssh-copy-id ansible@172.38.56.2
+ssh-copy-id ansible@
 ```
 ```
 ssh ansible@172.38.56.2
