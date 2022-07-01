@@ -1,6 +1,10 @@
 ## Kubernetes
 
 ## Kubernetes Commands
+join command
+```
+kubeadm token create --print-join-command
+```
 execute file
 
 ```
