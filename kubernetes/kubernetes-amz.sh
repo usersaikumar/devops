@@ -20,3 +20,6 @@ sudo apt-get install -y kubelet kubeadm kubectl
 # Network Tables
 echo "net.bridge.bridge-nf-call-iptables=1" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
+# remove
+rm /etc/containerd/config.toml
+systemctl restart containerd
